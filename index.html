@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!-- <script language="javascript" type="text/javascript">
+      let roulette;
+      let image = document.getElementById("image");
+
+      // ルーレットを開始
+      function start() {
+        roulette = setInterval(function() {
+          // 1〜4の範囲でランダムな数値を作成
+          let idx = Math.floor( Math.random() * 4 ) + 1;
+          // ルーレット
+          document.getElementById("image").innerHTML = idx;
+          // image.innerHTML = idx;
+          // image.src = "img/image1.png";
+        }, 100);
+      }
+
+      // ルーレットを停止
+      function stop() {
+        if(roulette) {
+          clearInterval(roulette);
+        }
+      }
+    </script> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="outline">
+    <img class="image" id="image" src="img/image_default.png" />
+    <!-- <div class="image" id="image">1</div> -->
+    <br />
+    <input type="button" value="スタート" id="start" onclick="start();" />
+    <input type="button" value="ストップ" id="stop" onclick="stop();" />
+    <div class="footer_wrap">
+      <div class="inner">
+        <p>Productions＠mohumohu.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
